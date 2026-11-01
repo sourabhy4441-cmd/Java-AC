@@ -1,5 +1,5 @@
 import java.util.*;
-public class BuySellStock{
+public class Leetcode_121{
 
     public static int BuySellStock(int prices[]){
         int buyPrice = Integer.MAX_VALUE;
