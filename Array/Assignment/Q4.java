@@ -2,8 +2,10 @@ import java.util.*;
 public class Q4{
     public static int TrapRainWater(int height[]){
         int width =1;
-         int leftMax[] = new int[height.length];
+
+        int leftMax[] = new int[height.length];
         leftMax[0] = height[0];
+        
         for(int i=1;i<height.length;i++){
             leftMax[i] = Math.max(height[i] , leftMax[i-1]);
         }

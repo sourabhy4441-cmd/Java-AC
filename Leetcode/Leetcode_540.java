@@ -1,6 +1,9 @@
 import java.util.*;
-public class Leetcode_136 {
-    public int singleNonDuplicate(int[] nums) {
+public class Leetcode_540 {
+    public static int singleNonDuplicate(int[] nums) {
+
+        // Approach 1
+
         // int result =0;
         // for(int num : nums){
         //     result ^= num;
@@ -8,7 +11,10 @@ public class Leetcode_136 {
         // return result;
 
 
+
+        // Approach 2
         // using linear search
+
         // for(int i=1;i<nums.length;i++){
         //     if(nums.length == 1){
         //         return nums[i-1];
@@ -21,6 +27,7 @@ public class Leetcode_136 {
 
 
 
+        // Approach 3
         // using Binary search
         int left = 0;
         int right = nums.length-1;
@@ -58,5 +65,11 @@ public class Leetcode_136 {
             
         }
         return 1;
+    }
+
+    public static void main(String[] args){
+        
+        int[] nums = {1,1,2,3,3,4,4,8,8};
+        System.out.println(singleNonDuplicate(nums));
     }
 }
